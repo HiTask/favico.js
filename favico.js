@@ -458,7 +458,7 @@
 
 		var setOpt = function (key, value) {
 			var opts = key;
-			if (!(value == null && Object.prototype.toString.call(key) == '[object Object]')) {
+			if (!(value === null && Object.prototype.toString.call(key) == '[object Object]')) {
 				opts = {};
 				opts[key] = value;
 			}
